@@ -1,14 +1,16 @@
-:root{
+:root
+{
 	--color1 : #233059;
 	--color2 : #506CBF;
 	--color3 : #A0C9D9;
 	--color4 : #F2D680;
 	--color5 : #F26D6D;
-	--mainBackColor : #FFFFFF;
 }
 
-@font-face {
+@font-face 
+{
 	font-family: "HellFinland";
+	font-display: swap;
 	src: url("../fonts/Hell Finland.ttf");
 }
 
@@ -21,32 +23,68 @@
 body
 {
 	overflow-y: hidden;
-	background-color: var(--mainBackColor);
+	background-color: #F8F8F8;
+}
+
+button
+{
+	border-style : none;
+	border-width : none;
+	border-color : none;
+	font-family : "HellFinland", "Arial", sans-serif;
+	font-style : bold;
+	
 }
 
 .background_shape
 {
+	position: relative;
 	z-index: 0;
-	width: 40%;
-    position: relative;
-    border-top: 1080px solid var(--color4);
+	border-top: 1080px solid var(--color4);
     border-right: 350px solid transparent;
-    background-color: var(--mainBackColor);
+	width: 40%;
+    background-color: transparent;
+}
+
+.menu_button_container
+{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	width: 20%;
+}
+.menu_button_container button
+{
+	display: block;
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 5px 24px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	font-size: 30px;
+	text-align: right;
+	color: white;
+}
+.menu_button_container button:hover 
+{
+	color: gray;
 }
 
 .menu_text_style_1
 {
-	font-family: "HellFinland";
-	font-weight: bold;
 	font-size: 30px;
+	font-family: "HellFinland", "Arial", sans-serif;
+	font-weight: bold;
 	color: var(--color5);
 }
 
 .menu_text_style_2
 {
+	font-size: 25px;
 	font-family: Source Sans Pro;
 	font-weight: bold;
-	font-size: 25px;
 	color: var(--color5);
 }
 
@@ -54,8 +92,8 @@ body
 {
 	z-index: 2;
 	position:absolute;
-	left: 60%;
 	top: 40%;
+	left: 60%;
 }
 
 .spacer
@@ -65,19 +103,36 @@ body
 
 .centered_image
 {
-	margin: auto;
-	z-index: 1;
 	position:absolute;
+	z-index: 1;
+	margin: auto;
+	top: 0;
+    bottom: 0;
 	left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
 	width: 300px;
 	height: 700px;
 }
-
 .centered_image img
 {
-	padding-left:20px;
 	width: 77%;
+	padding-left: 20px;
+}
+
+.copyright_footer
+{
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 20px;
+	text-align : right;
+	width: 200px;
+	height: 40px;
+}
+.copyright_footer p
+{
+	font-size: 20px;
+	font-family: Source Sans Pro;
+	font-weight: italic;
+	color: var(--color5);
 }
