@@ -20,48 +20,64 @@
 
 body
 {
+	overflow-y: hidden;
 	background-color: var(--mainBackColor);
 }
 
 .background_shape
 {
+	z-index: 0;
 	width: 40%;
-    z-index: 0;
     position: relative;
-    border-top: 969px solid var(--color4);
+    border-top: 1080px solid var(--color4);
     border-right: 350px solid transparent;
     background-color: var(--mainBackColor);
 }
 
-.menuText
+.menu_text_style_1
 {
-	font-weight: bold;
 	font-family: "HellFinland";
+	font-weight: bold;
 	font-size: 30px;
 	color: var(--color5);
+}
+
+.menu_text_style_2
+{
+	font-family: Source Sans Pro;
+	font-weight: bold;
+	font-size: 25px;
+	color: var(--color5);
+}
+
+.menu_text_position
+{
 	z-index: 2;
 	position:absolute;
 	left: 60%;
-	bottom: 5%;
+	top: 40%;
+}
+
+.spacer
+{
+	padding-top: 50px;
 }
 
 .centered_image
 {
 	margin: auto;
 	z-index: 1;
-	width: 300px;
-	height: 700px;
 	position:absolute;
 	left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-	
+	width: 300px;
+	height: 700px;
 }
 
 .centered_image img
 {
 	padding-left:20px;
-  width: 77%;
+	width: 77%;
 }
