@@ -1,0 +1,67 @@
+:root{
+	--color1 : #233059;
+	--color2 : #506CBF;
+	--color3 : #A0C9D9;
+	--color4 : #F2D680;
+	--color5 : #F26D6D;
+	--mainBackColor : #FFFFFF;
+}
+
+@font-face {
+	font-family: "HellFinland";
+	src: url("../fonts/Hell Finland.ttf");
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: var(--mainBackColor);
+}
+
+.background_shape
+{
+	width: 40%;
+    z-index: 0;
+    position: relative;
+    border-top: 969px solid var(--color4);
+    border-right: 350px solid transparent;
+    background-color: var(--mainBackColor);
+}
+
+.menuText
+{
+	font-weight: bold;
+	font-family: "HellFinland";
+	font-size: 30px;
+	color: var(--color5);
+	z-index: 2;
+	position:absolute;
+	left: 60%;
+	bottom: 5%;
+}
+
+.centered_image
+{
+	margin: auto;
+	z-index: 1;
+	width: 300px;
+	height: 700px;
+	position:absolute;
+	left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+	
+}
+
+.centered_image img
+{
+	padding-left:20px;
+  width: 77%;
+}
