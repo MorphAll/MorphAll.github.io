@@ -1,0 +1,123 @@
+:root {
+    --color1: #233059;
+    --color2: #506CBF;
+    --color3: #A0C9D9;
+    --color4: #F2D680;
+    --color5: #F26D6D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: hidden;
+    background-color: #F8F8F8;
+}
+
+button {
+    border-style: none;
+    border-width: none;
+    border-color: none;
+    font-family: Raleway, "Arial", sans-serif;
+    font-style: bold;
+
+}
+
+.gauche {
+    width: 20%;
+}
+
+.background_shape {
+    position: relative;
+    z-index: 1;
+    border-top: 1080px solid var(--color4);
+    border-right: 100px solid transparent;
+    width: 20%;
+    background-color: transparent;
+}
+
+.menu_button_container {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 2%;
+    width: 20%;
+}
+
+.menu_button_container button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+}
+
+.menu_button_container button:hover {
+    color: gray;
+}
+
+.menu_text_style_1 {
+    font-size: 30px;
+    font-family: Raleway, "Arial", sans-serif;
+    color: var(--color5);
+}
+
+.menu_text_style_2 {
+    font-size: 25px;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    color: var(--color5);
+}
+
+.menu_text_position {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.spacer {
+    padding-top: 50px;
+}
+
+.centered_image {
+    position: absolute;
+    z-index: 0;
+    margin: auto;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 900px;
+    height: 900px;
+}
+
+.centered_image img {
+    width: 77%;
+    padding-left: 20px;
+}
+
+.copyright_footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 20px;
+    text-align: right;
+    width: 200px;
+    height: 40px;
+}
+
+.copyright_footer p {
+    font-size: 20px;
+    font-family: Source Sans Pro;
+    font-weight: italic;
+    color: var(--color5);
+}
