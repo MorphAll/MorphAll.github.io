@@ -11,34 +11,7 @@
 		<link href="styles/index.css" rel="stylesheet" type="text/css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function () {
-					$('button:contains("HOME")').click(function (e) {
-						e.preventDefault();
-						$(".centered_image").fadeIn();
-						$(".menu_text_position").fadeIn();
-					});
-
-					$('button:contains("PROJECTS")').click(function (e) {
-						e.preventDefault();
-						$(".centered_image").fadeOut();
-						$(".menu_text_position").fadeOut();
-					});
-					$('button:contains("GAME DESIGN")').click(function (e) {
-						e.preventDefault();
-						$(".centered_image").fadeOut();
-						$(".menu_text_position").fadeOut();
-
-					});
-					$('button:contains("CONTACT")').click(function (e) {
-						e.preventDefault();
-						$(".centered_image").fadeOut();
-						$(".menu_text_position").fadeOut();
-						$(".menu_text_position").fadeOut();
-
-					});
-				});
-		</script>
+		<script src="scripts/index.js"></script>
 	</head>
 	
 	<body>
@@ -63,7 +36,7 @@
 			<p>GAMEPLAY PROGRAMMER<br>GAME DESIGNER<br>QA TESTER</p>
 			<div class="menu_text_style_2 spacer">
 				<p>Phone : 06.70.03.81.95</p>
-				<p>Email : besnard.florian@outlook.com</p>
+				<p>Email : <a href="mailto:youremailaddress">besnard.florian@outlook.com</a></p>	
 			</div>
 		</div>
 	</body>

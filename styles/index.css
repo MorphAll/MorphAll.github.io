@@ -12,8 +12,8 @@
 }
 
 body {
-    overflow-y: hidden;
     background-color: #F8F8F8;
+    display: none;
 }
 
 button {
@@ -22,19 +22,19 @@ button {
     border-color: none;
     font-family: Raleway, "Arial", sans-serif;
     font-style: bold;
-
 }
 
-.gauche {
+#gauche {
+    position: fixed;
+    z-index: 1;
+    top: 0;
     width: 20%;
 }
 
 .background_shape {
-    position: relative;
-    z-index: 1;
-    border-top: 1080px solid var(--color4);
+    border-top: 100vh solid var(--color4);
     border-right: 100px solid transparent;
-    width: 20%;
+    width: 100%;
     background-color: transparent;
 }
 
@@ -42,8 +42,8 @@ button {
     position: absolute;
     z-index: 2;
     top: 40%;
-    left: 2%;
-    width: 20%;
+    left: 10%;
+    width: 100%;
 }
 
 .menu_button_container button {
@@ -81,7 +81,7 @@ button {
     z-index: 2;
     position: absolute;
     top: 40%;
-    right: 5%;
+    right: 7%;
 }
 
 .spacer {
@@ -92,21 +92,21 @@ button {
     position: absolute;
     z-index: 0;
     margin: auto;
-    top: 10%;
+    top: 0;
     bottom: 0;
-    left: 0;
+    left: -15%;
     right: 0;
-    width: 900px;
-    height: 900px;
+    width: 700px;
+    height: 800px;
 }
 
 .centered_image img {
-    width: 77%;
+    width: 100%;
     padding-left: 20px;
 }
 
 .copyright_footer {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     bottom: 0;
     right: 20px;
