@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="icon" href="https://image.flaticon.com/icons/png/512/119/119703.png">
 		<title>Florian Besnard</title>
-
+		<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Raleway:wght@800&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -27,11 +27,11 @@
 			</div>
 		</div>
 		
-		<div class="centered_image">
+		<div class="centered_image" id="home">
 			<img src="images/line.png">
 		</div>
 		
-		<div class="menu_text_position menu_text_style_1">
+		<div class="menu_text_position menu_text_style_1" id="home">
 			<h1>FLORIAN BESNARD</h1>
 			<p>GAMEPLAY PROGRAMMER<br>GAME DESIGNER<br>QA TESTER</p>
 			<div class="menu_text_style_2 spacer">
@@ -39,11 +39,72 @@
 				<p>Email : <a href="mailto:youremailaddress">besnard.florian@outlook.com</a></p>	
 			</div>
 		</div>
-	</body>
-	
-	<footer>
-		<div class="copyright_footer">
-			<p>© Florian Besnard 2020</p>
+
+		<div class="project_container" id="projects">
+			<!-- DEBUNKER -->
+			<div class="project">
+				<div id="project_overview_image">
+					<img src="images/debunker.png" id="debunker">
+				</div>
+				<div id="project_overview_description">
+					<p class="project_text_style_01"><b>Debunker</b> est un jeu d'action narration.
+					<br>Réalisé sur Unreal Engine 4 à l'aide de blueprint, le projet a duré 2 mois avec une équipe de 5 Game Design & Programmer. 
+					</p>
+				</div>
+				<button id="project_overview_button" onclick="location.href='https://www.youtube.com/watch?v=XrSZMwr8Mos'"
+					type="button">
+					SEE MORE
+				</button>
+			</div>
+
+			<!-- WORK IN PROGRESS -->
+			<div class="project">
+				<div id="project_overview_image">
+					<img src="images/wip.png" id="wip">
+				</div>
+				<div id="project_overview_description">
+					<p class="project_text_style_01"><b>Work In Progress</b> est un jeu d'arcade.
+					<br>Le jeu a été réalisé sur Unity pour le casque de réalité virtuelle Oculus Quest.
+					</p>
+				</div>
+				<button id="project_overview_button"
+					onclick="location.href='https://www.youtube.com/watch?v=qa8D5wDzun4'" type="button">
+					SEE MORE
+				</button>
+			</div>
+
+			<!-- UMBRA -->
+			<div class="project">
+				<div id="project_overview_image">
+					<img src="images/umbra.png" id="umbra">
+				</div>
+				<div id="project_overview_description">
+					<p class="project_text_style_01"><b>Umbra</b> est un jeu Rogue-like / Metroidvania.
+					<br>Créé sur Unity en mélangeant 2D, 3D, et de nombreux effets de lumière.
+					<br>Le projet a duré 2 mois avec une équipe mélangeant programmeurs, artistes et game designers.
+					</p>
+				</div>
+				<button id="project_overview_button"
+					onclick="location.href='https://drive.google.com/file/d/1835HTJKEZ8EXpYKOKsbVAnhw_Ddixhra/view?usp=sharing'" type="button">
+					SEE MORE
+				</button>
+			</div>
+
+			<!-- DREAM RUSH -->
+			<div class="project">
+				<div id="project_overview_image">
+					<img src="images/drush.png" id="drush">
+				</div>
+				<div id="project_overview_description">
+					<p class="project_text_style_01"><b>Dream Rush</b> a été réalisé en une semaine durant une Game Week 
+						organisée dans les locaux d'Isart Digital par l'école en partenariat avec Webedia.
+					</p>
+				</div>
+				<button id="project_overview_button" 
+					onclick="location.href='https://drive.google.com/file/d/1EtzBYc4VwohQJ3Kf20BbEoZEIjnHDtMZ/view?usp=sharing'" type="button">
+					SEE MORE
+				</button>
+			</div>
 		</div>
-	</footer>
+	</body>
 </html>
