@@ -5,7 +5,7 @@ $(document).ready(function () {
     // HOME PAGE
     $('button:contains("HOME")').click(function (e) {
         e.preventDefault();
-        $("#projects").fadeOut(500).promise().done(function(){
+        $("#projects, #gd").fadeOut(500).promise().done(function(){
             $(".centered_image").fadeIn(500);
             $(".menu_text_position").fadeIn(500);
         });
@@ -14,21 +14,22 @@ $(document).ready(function () {
     // PROJECTS PAGE
     $('button:contains("PROJECTS")').click(function (e) {
         e.preventDefault();
-        $(".centered_image, .menu_text_position").fadeOut(500).promise().done(function(){
-            $(".project_container").fadeIn(500);
+        $(".centered_image, .menu_text_position, #gd").fadeOut(500).promise().done(function(){
+            $("#projects").fadeIn(500);
         });
     });
     
     // GD PAGE
     $('button:contains("GAME DESIGN")').click(function (e) {
         e.preventDefault();
-        $(".centered_image, .menu_text_position, .project_container").fadeOut(500);
+        $(".centered_image, .menu_text_position, #projects").fadeOut(500).promise().done(function () {
+            $("#gd").fadeIn(500);
+        });
     });
     
     // CONTACT PAGE
-    $('button:contains("CONTACT")').click(function (e) {
+    $('button:contains("ABOUT")').click(function (e) {
         e.preventDefault();
-        $(".centered_image, .menu_text_position, .project_container").fadeOut(500);
-
+        $(".centered_image, .menu_text_position, #projects, #gd").fadeOut(500).promise().done(function () {});
     });
 });
