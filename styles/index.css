@@ -60,10 +60,20 @@ button {
     font-size: 50px;
     text-align: left;
     color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .menu_button_container button:hover {
     color: gray;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .menu_text_style_1 {
@@ -134,47 +144,27 @@ button {
     -o-border-radius: 10px;
 }
 
-#project_overview_image {
+.project_overview_image {
     order: 0;
     position: relative;
     overflow: hidden;
-    flex: 1 0 20%;
+    flex: 1 0 55%;
     margin: 20px;
     height: 300px;
 }
 
-#project_overview_image img {
+.project_overview_image img {
     position: absolute;
-}
-
-#debunker {
-    height: 110%;
-    bottom: 0;
-    left: -30%;
-}
-
-#wip {
-    height: 140%;
-    bottom: -5%;
-    left: -40%;
-}
-
-#umbra {
     height: 100%;
-    left: -24%;
 }
 
-#drush {
-    width: 100%;
-    top: 15%;
-}
-
-#project_overview_description {
-    order: 1;
-    flex: 1 0 30%;
-    margin-top: 20px;
+.project_right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
     margin-bottom: 20px;
     padding-right: 30px;
+    order: 1;
 }
 
 .project_text_style_01 {
@@ -184,13 +174,36 @@ button {
     color: black;
 }
 
-#project_overview_button {
-    order: 2;
-    flex: 0 0 100px;
-    height: 50px;
-    align-self: center;
-    margin: 20px;
-    background-color: gold;
+.project_button_container a {
+    font-size: 28px;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    color: black;
+}
+
+.project_button_container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.project_button_container a {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    background-color: var(--color4);
+    transition: 0.5s;
+
+}
+
+.project_button_container a:hover {
+    background-color: rgb(255, 191, 94);
+    transition: 0.5s;
 }
 
 /* GAME DESIGN */
@@ -228,4 +241,65 @@ button {
     font-weight: 100;
     color: black;
     padding: 10px;
+}
+
+/* ABOUT */
+
+.about_container {
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 13%;
+    width: 53%;
+    justify-content: flex-end;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.about_me img {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.40);
+}
+
+.about_me p {
+    font-size: 20px;
+    font-family: Archivo;
+    font-weight: 100;
+    color: black;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+.link img {
+    margin-right: 20px;
+    width: 50px;
+    height: 100%;
+}
+
+.link a {
+    font-size: 30px;
+    width: 50%;
+    text-decoration: none;
+    font-family: Archivo;
+    font-weight: 100;
+    color: black;
 }
